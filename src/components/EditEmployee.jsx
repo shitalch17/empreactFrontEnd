@@ -105,7 +105,7 @@ function EditEmployee() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/employees/${id}`).then(res => {
+    axios.get(`https://empjsonbackend-hnvn.onrender.com/employees/${id}`).then(res => {
       setFormData(res.data);
     });
   }, [id]);
