@@ -126,7 +126,7 @@ function EditEmployee() {
   const handleSubmit = e => {
     e.preventDefault();
     if (validate()) {
-      axios.put(`http://localhost:3001/employees/${id}`, formData).then(() => {
+      axios.put(`https://empjsonbackend-hnvn.onrender.com/employees/${id}`, formData).then(() => {
         toast.success('Employee updated successfully!');
         navigate('/');
       });
